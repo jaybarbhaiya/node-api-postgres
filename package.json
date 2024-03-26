@@ -3,13 +3,19 @@
     "version": "1.0.0",
     "description": "RESTful API with Node.js, Express and Postgres",
     "main": "index.js",
+    "type": "module",
     "scripts": {
-        "start": "node index.js"
+        "start": "node index.js",
+        "test": "mocha 'test/**/*.js'"
     },
     "license": "MIT",
     "dependencies": {
         "cors": "^2.8.5",
         "express": "^4.18.3",
         "pg": "^8.11.3"
+    },
+    "devDependencies": {
+        "chai": "^5.1.0",
+        "mocha": "^10.3.0"
     }
 }
